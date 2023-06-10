@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/067340eff9.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
-    
+    <h1 class="header">Rock Paper Scissors</h1>
+    <h2 class="sets">Best-of-5</h2>
+
+    <div class="users">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-robot"></i>
+    </div>    
+
+    <div class="icon_div">
+        <div class="player">
+            <ul class="player-rps">
+                <li class="hover"><i data-option="rock" class="fa-regular fa-hand-back-fist rock"></i></li>
+                <li class="hover"><i data-option="paper" class="fa fa-hand-paper-o paper"></i></li>
+                <li class="hover"><i data-option="scissors" class="fa fa-hand-scissors-o scissors"></i></li>
+            </ul>
+        </div>
+
+        <div class="computer">
+            <ul class="computer-rps">
+                <li><i class="fa-regular fa-hand-back-fist rock"></i></li>
+                <li><i class="fa fa-hand-paper-o paper"></i></li>
+                <li><i class="fa fa-hand-scissors-o scissors"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="winner_note"></div>
+    <p class="game_over"></p>
+    <div class="play_again"><button hidden>Play again</button></div>
+ 
+    <div class="score">
+        <p class="score_txt">Score</p>  
+        <p class="total_score">0 - 0</p>
+    </div>
+    <p class="round">Round: 0</p> 
+   
+
 </body>
 </html>

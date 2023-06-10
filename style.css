@@ -1,0 +1,157 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    background-color: #332F2E;
+
+}
+
+.header, .sets{
+    text-align: center;
+    color: #E6CE3C;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.header{
+
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.sets{
+
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+.users{
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 80px;
+    color: #6263FA;
+}
+
+.users > *{
+    font-size: 80px;
+}
+
+.winner_note, .score, .game_over, .round{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+
+}
+
+.icon_div{
+
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+
+    
+}
+
+.player-rps, .computer-rps{
+
+    display: flex;
+    gap: 35px;
+    padding: 25px;
+
+}
+
+li{
+    list-style-type: none;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+li i{
+
+    color: white;
+    padding: 20px;
+    border-radius: 10%;
+    border-width: 10px;
+    border: solid white;
+    
+}
+
+
+.player-rps > .hover:hover i{
+    transform: scale(1.1);
+    border: solid #E6CE3C;
+    color: #E6CE3C;
+    border-radius: 10%;
+    box-shadow: 0 0 15px #E6CE3C;
+    transition: .6s ease;
+  }
+
+.computer-active{
+    transform: scale(1.1);
+    border: solid #E6CE3C;
+    color: #E6CE3C;
+    border-radius: 10%;
+    box-shadow: 0 0 15px #E6CE3C;
+    transition: .6s ease;
+
+  }
+
+button{
+    padding: 5px 20px;
+    background-color: white;
+    color: #6263FA;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    border-radius: 5px;
+
+}
+
+.play_again{
+    text-align: center;
+}
+
+button:hover{
+    box-shadow: 0 0 15px #E6CE3C;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    li i{
+        font-size: 40px;
+        padding: 10px;
+    }
+    li {
+        font-size: 0px;
+    }
+    .player-rps, .computer-rps{
+        gap: 10px;
+    
+      }
+    
+    .users > *{
+        font-size: 40px;
+
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 470px) {
+li i{
+    font-size: 20px;
+    padding: 10px;
+}
+li {
+    font-size: 0px;
+}
+.player-rps, .computer-rps{
+    gap: 10px;
+
+  }
+
+}
